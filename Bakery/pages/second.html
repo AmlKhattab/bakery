@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>info</title>
+   
+</head>
+<body class="sec">
+    <h1>have a look to our menu...</h1>
+    
+  
+    <h3>we serve WHAT ?</h3>
+   <dl id="header">
+    <dt id="muffin">MUFFINS </dt>
+        <dd> Blueberry Corn Muffins · Double-Chocolate Muffins · Breakfast Egg-and-Cheese Muffins · Blueberry Muffins · Cinnamon-Sugar Ragamuffins.
+    <dt id="appplepie">APPLE PIES  </dt>
+        <dd> Old-Fashioned Apple Pie . Cumin and Jaggery Glazed Apple Pie . Dutch Apple Pie.Salted Caramel Apple Pie . Puff Pastry Apple Pie</dd>
+   
+    <dt id="pizza">PIZZA<dt>
+        <dd> pepperoni . cheese lovers . bacon
+    <dt id="cake">CAKE <dt>
+        <dd>Red velvet cake . Pound cake . Carrot cake .Sponge Cake . Chocolate cake</dd>
+   </dl>
+   <div class="scc">
+    <h2> - Have you seen the pizza we make ?  try to grab that slice.....</h2>
+    <img src="../imgs/pizza2.jpg" alt="" width="450"  usemap="#image-map">
+    <h1>Write down ur comment</h1>
+  <form id="comment-form" action="" method="post">
+    <label for="name"> Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="email">  Email :</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    <label for="comment"> UR comment :</label>
+    <br>
+    <textarea id="comment" name="comment" rows="5" cols="50" required></textarea>
+    <br><br>
+    <input type="submit" value=" SEND">
+  </form>
+  <div id="result"></div>
+  <script>
+    $(function() {
+      $('#comment-form').submit(function(e) {
+        e.preventDefault(); 
+        var form_data = $(this).serialize(); 
+        $.ajax({
+          type: 'POST',
+          url: 'send_comment.php', 
+          data: form_data
+        }).done(function(data) {
+          $('#result').html("<p> successfully SENT !</p>"); 
+        }).fail(function() {
+          alert( "ERROR!");
+        });
+      });
+    });
+  </script>
+
+   </div>
+  
+
+
+   <h2>Finish that pizza in under 15 min and you will have it for free !!</h2>
+   <h4>Here is our leader board</h4>
+   <table>
+    <tr>
+        <th >name</th>
+        <th>time</th>
+        <th>pizza flavor</th>
+    </tr>
+    <tr>
+        <td rowspan="2">tom</td>
+        <td>10 mins</td>
+        <td> pepperoni  </td>
+      
+    </tr>
+    <tr>
+        
+        <td >11 mins</td>
+        <td >pepperoni  </td>
+    </tr>
+    <tr>
+        <td> smiths</td>
+        <td>13 mins</td>
+        <td> cheese lovers</td>
+    </tr>
+    <tr>
+        <td>Alex</td>
+        <td>12</td>
+        <td>bacon
+        </td>
+    </tr>
+    
+    <tr>
+        <td> hightest score</td>
+        <td colspan="2">  10 mins(smith)</td>
+       
+    </tr>
+
+   </table>
+
+   <h5>Fill out your info if you want to be our next champ <a href="../pages/third.html"> sign me up</a></h5>
+   <br>
+   <a href="../pages/index.html">go to home page</a>
+   <script>
+   var header = document.getElementById("header");
+   var muf = document.getElementById("muffin");
+   var applpie = document.getElementById("applepie");
+   var pzza = document.getElementById("pizza");
+   var cak = document.getElementById("cake");
+ 
+   muf.onclick = function(){
+    header.style.backgroundImage="url(../imgs/mfn.jpg)"
+   }
+   applpie.onclick = function(){
+    header.style.backgroundImage="url(../imgs/apple.jpg)"
+   }
+   pzza.onclick = function(){
+    header.style.backgroundImage="url(../imgs/pza.jpg)"
+   }
+   cak.onclick = function(){
+    header.style.backgroundImage="url(../imgs/choco.jpg)"
+   }
+   
+
+
+   </script>
+
+
+</body>
+</html>

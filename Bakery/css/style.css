@@ -1,0 +1,146 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+ 
+  #result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }.pg{
+    background-color: rgba(240, 230, 140, 0.402);
+    color: black;
+}
+
+h1{
+    color: brown;
+    text-align: center;
+}
+   
+
+
+li{
+    display: inline-block;
+    margin: 15px;
+    color: blue;
+  
+
+}
+a{
+  
+    text-decoration: none;
+  
+}
+ul{
+    background-color: lightgray;
+}
+p{
+    color: darkslategray ;
+    text-align: justify;
+}
+.gg{
+    align-content: center;
+    justify-content: center;
+   float: left;
+}
+
+.thrd{
+    background-image: url(../imgs/R.jpg);
+}
+.ff{
+    background-color:burlywood;
+    width: 600px;
+   align-items: center;
+}
+.frm{
+   align-items: first baseline;
+   margin: 40px;
+   
+}
+.pp{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(14, 96, 108);
+}
+.sec{
+    background-color: powderblue;
+}
+
+dt{
+    text-decoration: underline;
+    color: rgb(12, 170, 181);
+}
+dd{
+    color: rgb(14, 96, 108);
+}
+.scc{
+    margin-left: 400px;
+}
+h4{
+    color: darkgreen;
+}
+table{
+    width: 50%;
+    border: 1px solid black;
+}
+table td{
+    padding: 10px;
+    background-color: lightseagreen;
+    text-align: center;
+}
+table th{
+    background-color: antiquewhite;
+}
+
+
